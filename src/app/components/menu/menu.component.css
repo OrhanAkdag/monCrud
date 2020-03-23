@@ -1,0 +1,10 @@
+.menu-spacer {
+  flex: 1 1 auto;
+}
+.mat-button:hover{
+text-decoration: none;
+}
+.mat-drawer-container {
+  background-color: #fafafa00;
+  color: rgba(0,0,0,.87);
+}

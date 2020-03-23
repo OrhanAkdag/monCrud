@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "livre 1",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 2,
+      "name": "livre 2",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 3,
+      "name": "livre 36",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 4,
+      "name": "livre 36",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 5,
+      "name": "livre 36",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 6,
+      "name": "livre 36",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    },
+    {
+      "id": 7,
+      "name": "livre 36",
+      "brand": "Puma",
+      "type": "Ville",
+      "size": 43,
+      "dateStock": "2020-02-19T13:48:32.540Z"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<div *ngIf="isLoading === true" class="mt-2">
+  <div role="status" class="container my-2 d-flex justify-content-center">
+    <mat-spinner diameter="20"></mat-spinner>
+  </div>
+</div>
+
+<ng-container *ngIf="!isLoading">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{ product.name }}</h1>
+      <p class="lead">This {{ product.id }}</p>
+    </div>
+  </div>
+</ng-container>

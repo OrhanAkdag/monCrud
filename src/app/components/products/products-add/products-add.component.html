@@ -1,0 +1,46 @@
+<div class="bg-form">
+  <div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="container-form shadow p-4 bg-white w-100 h-60">
+      <h2 class="text-center mb-4 bg-primary rounded shadow-sm text-white">Add a new product</h2>
+          <form #addCarForm="ngForm" (ngSubmit)="addProduct()" class="">
+            <mat-form-field class="example-full-width w-100" appearance="outline">
+              <mat-label class="h6 p-1">Add product ID</mat-label>
+              <div class="form-group">
+                <input
+                  class="p-1"
+                  matInput
+                  type="number"
+                  name="id"
+                  id="id"
+                  required [(ngModel)]="productToAdd.id">
+              </div>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width w-100" appearance="outline">
+              <mat-label class="h6 p-1">Add product name</mat-label>
+              <div class="form-group">
+                <input
+                  matInput
+                  class="p-1"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required [(ngModel)]="productToAdd.name">
+              </div>
+            </mat-form-field>
+            <br>
+              <label id="example-radio-group-label">Selectionnez la marque</label>
+              <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                name="brand"
+                [(ngModel)]="favBrandAvailable">
+                <mat-radio-button class="example-radio-button" *ngFor="let brand of brandAvailable" [value]="brand">
+                  {{brand}}
+                </mat-radio-button>
+              </mat-radio-group>
+            <input [disabled]="!addCarForm.valid" class="btn btn-success" type="submit">
+          </form>
+    </div>
+  </div>
+</div>

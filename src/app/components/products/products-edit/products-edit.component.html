@@ -1,0 +1,41 @@
+<div *ngIf="isLoading === true">
+  <div role="status" class="container my-2 d-flex justify-content-center">
+    <mat-spinner diameter="20"></mat-spinner>
+  </div>
+</div>
+
+<div class="bg-form" *ngIf="!isLoading">
+  <div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="container-form shadow p-4 bg-white w-100 h-60">
+      <h2 class="text-center mb-4 bg-primary rounded shadow-sm text-white">Edit a product</h2>
+          <form #editCarForm="ngForm" (ngSubmit)="editProduct()" class="">
+            <br>
+            <mat-form-field class="example-full-width w-100" appearance="outline">
+              <mat-label class="h6 p-1">Add product name</mat-label>
+              <div class="form-group">
+                <input
+                  matInput
+                  class="p-1"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required [(ngModel)]="productToEdit.name">
+              </div>
+            </mat-form-field>
+            <br>
+              <label id="example-radio-group-label">Selectionnez la marque</label>
+              <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                id="brand"
+                name="brand"
+                [(ngModel)]="favBrandAvailable">
+                <mat-radio-button class="example-radio-button" *ngFor="let brand of brandAvailable" [value]="brand">
+                  {{brand}}
+                </mat-radio-button>
+              </mat-radio-group>
+            <input [disabled]="!editCarForm.valid" class="btn btn-success" type="submit">
+          </form>
+    </div>
+  </div>
+</div>
